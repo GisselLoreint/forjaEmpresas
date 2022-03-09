@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario pacientes</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesforja.css">
+    <link rel="icon" href="img2/icon-svg.jpg">
+    <script src="https://kit.fontawesome.com/bb22cb708c.js" crossorigin="anonymous"></script>
+</head>
+
+
+<header id="header-pacientes" class="header-pacientes1">
+    <img src="img/0. logoforja.png">
+    <div>
+        <button type="submit"><a href="index.html">
+                <i class="fa-solid fa-house-user"></i></a>
+        </button>
+        <button type="submit"><a href="login.html">
+                <i class="fa-solid fa-power-off"></i></a>
+        </button>
+    </div>
+</header>
+
+
+<body>
+    <img src="img/3.franja.jpeg" class="franja-pacientes">
+    <div class="titulo-registro">
+        <h2>REGISTRO USUARIO NUEVO</h2>
+    </div>
+
+    <div class="caja-pacientes">
+        <form name="Form" action="https://www.youtube.com/" method="post" target="_self" autocomplete="autocomplete">
+
+            <div class="formulario-pacientes">
+                <div>
+                    <input type="date" name="date" id="date" class="input-pacientes input-inicio">
+                    <input type="number" name="num-registro" id="num-registro" placeholder="N resgistro"
+                        class="input-pacientes">
+                </div>
+                <div class="sub-datos caja-sub">
+                    <i class="fa-solid fa-user"></i>
+                    <h3 class="sub-datos-1">DATOS DEL PACIENTE</h3>
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre"
+                        class="input-pacientes input-formPacientes">
+                    <input type="text" name="apellido" id="apellido" required placeholder="Apellido"
+                        class="input-pacientes input-formPacientes">
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="identificacion" id="identificacion" required
+                        placeholder="Número de identificación" class="input-pacientes input-formPacientes">
+                    <select name="tipoid" id="tipoid" class="input-pacientes input-formPacientes"><br>
+                        <option>Tipo de documento...</option>
+                        <option value="0">Cédula de ciudadanía</option>
+                        <option value="1">Cédula de extranjería</option>
+                        <option value="2">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="form-group2">
+                    <input type="date" name="date" id="date" class="input-pacientes input-formPacientes">
+                    <input type="number" name="edad" id="edad" required placeholder="Edad"
+                        class="input-pacientes input-formPacientes">
+                </div>
+                <div class="sub-datos caja-sub">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3 class="sub-informacion">INFORMACIÓN DE CONTACTO</h3>
+                </div>
+                <div class="form-group2">
+                    <select name="departamento" id="departamento"
+                        class="input-pacientes input-formPacientes form-group2"><br>
+                        <option>Departamento de residencia...</option>
+                        <option value="0">Bogotá D.C</option>
+                        <option value="1">Cundinamarca</option>
+                        <option value="2">Soacha</option>
+                    </select>
+                    <select name="municipio" id="municipio" class="input-pacientes input-formPacientes form-group2"><br>
+                        <option>Municipio de residencia...</option>
+                        <option value="0">Bogotá D.C</option>
+                        <option value="1">Cundinamarca</option>
+                        <option value="2">Soacha</option>
+                    </select>
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="direccion" id="direccion" required placeholder="Dirección"
+                        class="input-pacientes input-formPacientes">
+                    <input type="email" name="email" id="email" required placeholder="Correo"
+                        class="input-pacientes input-formPacientes">
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="telefono" id="telefono" required placeholder="Teléfono fijo"
+                        class="input-pacientes input-formPacientes">
+                    <input type="text" name="celular" id="celular" required placeholder="Celular"
+                        class="input-pacientes input-formPacientes">
+                </div>
+                <div class="sub-datos caja-sub">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3 class="sub-estado">ESTADO DE SALUD</h3>
+                </div>
+                <div class="form-group2">
+                    <select name="municipio" id="municipio" class="input-pacientes input-final"><br>
+                        <option>Preexistencias...</option>
+                        <option value="0">1</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                    </select>
+                    <select name="municipio" id="municipio" class="input-pacientes input-final"><br>
+                        <option>Discapacidad...</option>
+                        <option value="0">Auditiva</option>
+                        <option value="1">Cundinamarca</option>
+                        <option value="2">Soacha</option>
+                    </select>
+                    <input type="text" name="alergias" id="alergias" required placeholder="Alergias"
+                        class="input-pacientes input-final">
+                </div>
+                <p class="input-radio">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha
+                    salido positiva?</p>
+                <div class="form-group2 input-radio">
+                    <label for="prueba1-si" class="label-r">SI</label>
+                    <input type="radio" name="prueba1-si" id="prueba1-si">
+                    <label for="prueba1-no" class="label-r">NO</label>
+                    <input type="radio" name="prueba1-no" id="prueba1-no">
+                </div>
+                <p class="input-radio">¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada
+                    o sospechosa
+                    de COVID-19 en los últimos días?</p>
+                <div class="form-group2 input-radio">
+                    <label for="prueba2-si" class="label-r">SI</label>
+                    <input type="radio" name="prueba12-si" id="prueba2-si">
+                    <label for="prueba2-no" class="label-r">NO</label>
+                    <input type="radio" name="prueba2-si" id="prueba2-si">
+                </div>
+            </div>
+        </form>
+        <div class="boton-guardar">
+            <button type="submit" class="btn-guardar">Guardar</button>
+        </div>
+    </div>
+
+    <footer class="footer-formPacientes">
+        <div>
+            <p>© 2021 FORJA EMPRESAS</p>
+        </div>
+    </footer>
+</body>
+
+</html>
