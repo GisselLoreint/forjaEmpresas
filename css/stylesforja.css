@@ -7,6 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -19,51 +20,55 @@ body{
     --gris-rata-color:#555353;
 }
 
+
 /*Header*/
 
 #header-contenedor{
+    display: flex;
+    flex-direction: column;
     padding-top: 5%;
 }
 
-.header-logo{
-    width: 20%;
-    padding-left: 5%;
+.header-log{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.header-logo img{
+   width: 250px;
 }
 
 .header-inject{
-    position: absolute;
-    top: 10%;
-    left: 22%;
-    width: 40px;
-    height: 40px;
+    max-width: 50px;
+    height: auto;
 }
 
 .contenedor-header-top{
-    padding-left: 30%;
-    margin-top: -8%;
-    margin-bottom: 5%;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.contenedor-header-top img{
+    height: 65px;
+}
+
+.datos{
+    display: flex;
 }
 
 .header-text-right{
-    display: inline-block;
-    margin-top: 5px;
-    margin-right: 5%;
+    margin: 8px;
+    padding-right: 25px;
     color: #696767;
 }
 
 .header-boton{
-    position: absolute;
-    right: 2%;
-    top: 3%;
-    height: 5%;
-    text-align: center;
     background-color: #0E5883;
     border: 1px solid #0E5883;
-    padding: 5px;
     border-radius: 12px;
+    margin: 40px 50px 0px 0px;
+    padding: 20px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -73,52 +78,53 @@ body{
 .header-boton a{
     color: white;
     text-decoration-line: none;
+    font-size: 15px;
 }
 
-
-.header-linea{
-    position: absolute;
-    right: 2%;
-    top: 15%;
-    width: 65%;
+.line-header{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
 }
 
-.banner-img{
+section{
+    background-image: url(../img/banner-medico.png);
+}
+
+section img{
     width: 100%;
 }
 
+.texto-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
 .banner-p1{
-    position: absolute;
-    left: 15%;
-    top: 45%;
-    font-size: 200%;
+   
+    font-size: 180%;
     color: var(--naranja-color);
 }
 
 .banner-p2{
-    position: absolute;
-    left: 23%;
-    top: 52%;
-    font-size: 220%;
+    font-size: 200%;
 }
 
 .banner-boton{
-    position: absolute;
-    left: 24%;
-    top: 66%;
     font-size: 100%;
     border-radius: 12px;
     border: 1px solid #0E5883;
     background-color: #0E5883;
     font-weight: bold;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    display: flex;
+    height: 3.5%;
 }
 
 .banner-boton a{
     color: white;
     text-decoration-line: none;
+    padding: 5px;
 }
 
 .icono{
@@ -135,24 +141,29 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 2%;
-    height: 450px;
+    height: 750px;
 }
 
 .caja-pequeña{
     background-color: #c4c4c4de;
     margin-top: -2.1%;
-    height: 450px;
+    height: 750px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .caja-pequeña-sub{
     color: #0D5381;
     font-weight: normal;
     font-size: 20px;
+    margin-top: 17px;
 }
 
 .signos{
     display: flex;
+    justify-content: center;
+    padding: 2rem;
     width: 150%;
 }
 .signos img{
@@ -162,46 +173,32 @@ body{
     margin-right: 1%;
 }
 
-.signos{
-    padding: 2rem;
-}
-
 .signos1{
     display: flex;
-}
-
-.signos1 p{
-    padding-top: 2.9rem;
+    justify-content: center;
+    margin-left: -12%;
 }
 
 .signos1 img{
     width: 38px;
     height: 38px;
-    margin-top: 13%;
-    margin-right: 0.5%;
+    margin-top: 1.5%;
 }
 
 li {
    list-style: none;
    background-image: url(../img/6.\ check.svg);
-   margin-left: 25%;
+   margin-left: 50%;
    padding-left: 2rem;
    padding-bottom: 1rem;
    background-size: 1.6rem;
    background-repeat: no-repeat;
-   font-size: 16px;
+   font-size: 20px;
 }
 
 .caja-signos{
     display: flex;
-    flex-basis: 100%;
     width: 80%;
-}
-
-.caja-hacer{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 70%;
 }
 
 .centrar{
@@ -209,11 +206,13 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    padding: 40px;
 }
 
 .oms-img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 88px;
 }
 
 a{
@@ -224,7 +223,7 @@ footer{
     background-color: #000;
     padding-top: -0.5px;
     text-align: center;
-    height: 50px;
+    height: 55px;
     color: white;
 }
 
@@ -240,6 +239,8 @@ footer{
 }
 
 .table-index td{
+    display: flex;
+    justify-content: center;
     background-color: #151433;
     color: white;
     font-size: 12px;
@@ -247,6 +248,7 @@ footer{
     border-bottom: 3px solid var(--gris-rata-color);
     padding-left: 5px;
 }
+
 
 /*Estilos login*/
 
@@ -736,4 +738,211 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+}
+
+@media screen and (min-width:768px) {
+
+    #header-contenedor{
+        padding: 10px -5px 0px -5px;
+    }
+
+    .header-logo{
+        width: 40%;
+        padding: 40px 1px 2px 70px;
+    }
+
+    .header-inject{
+        top: 7%;
+        left: 40%;
+    }
+    
+    .header-boton{
+        top: 8%;
+        right: 14%;
+        height: 3.5%;
+        border: 2px solid #0E5883;
+    }
+    
+    .header-boton a{
+        font-size: 18px;
+    }
+
+    .contenedor-header-top{
+        padding: 1% 10% 5% 10%;
+        margin-bottom: 2%;
+    }
+
+    .contenedor-header-top img{
+        height: 70px;
+        margin-left: -2px;
+    }
+    
+    .header-linea{
+        position: absolute;
+        top: 20%;
+        width: 90%;
+    }
+
+    .banner-p1{
+        left: 6%;
+        top: 28%;
+        font-size: 190%;
+    }
+    
+    .banner-p2{
+        left: 22%;
+        top: 32%;
+        font-size: 205%;
+    }
+    
+    .banner-boton{
+        left: 21%;
+        top: 39%;
+        font-size: 112%;
+        border: 2px solid #0E5883;
+    }
+    
+    .banner-boton a{
+        color: white;
+        text-decoration-line: none;
+        padding: 5px;
+    }
+    
+    .icono{
+        padding-left: 5px;
+    }
+
+    .caja-grande{
+        height: 850px;
+        background-size: 110%;
+    }
+
+    .caja-pequeña{
+        height: 850px;
+        background-size: 110%;
+    }
+    
+    li {
+        margin-left: 40%;
+        font-size: 22px;
+     }
+}
+
+@media screen and (min-width:1024px){
+
+    .header-inject{
+        top: 8%;
+    }
+
+    .header-boton{
+        right: 6%;
+    }
+
+    .header-linea{
+        top: 23%;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+
+    main{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .header-logo{
+        width: 25%;
+        margin-left: -25px;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    
+    .header-inject{
+        top: 11%;
+        left: 23%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contenedor-header-top{
+        padding-left: 25%;
+        margin-top: -16%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-boton{
+        right: 2%;
+        top: 5%;
+        height: 3%;
+        border: 2px solid #0E5883;
+    }
+    
+    .header-linea{
+        top: 17%;
+        width: 70%;
+    }
+    
+    .banner-p1{
+        left: 10%;
+        top: 26%;
+    }
+    
+    .banner-p2{
+        left: 23%;
+        top: 30%;
+    }
+    
+    .banner-boton{
+        left: 22%;
+        top: 40%;
+        padding-top: 0.5%;
+        display: flex;
+    }
+    
+    .caja-grande{
+        background-size: 100%;
+        margin-top: 2%;
+        height: 510px;
+    }
+    
+    .caja-pequeña{
+        margin-top: -2.1%;
+        height: 510px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .signos{
+        padding-right: 22rem;
+        padding-top: -1rem;
+    }
+    
+    .signos1 p{
+        padding-top: 10rem;
+    }
+    
+    .signos1 img{
+        margin-top: 30%;
+        margin-right: 0.5%;
+    }
+    
+    li {
+       margin-left: 25%;
+       padding-left: 2rem;
+       padding-bottom: 1rem;
+       font-size: 18px;
+    }
+
+    .caja-hacer{
+        flex-basis: 80%;
+    }
+    
+    .table-index td{
+        justify-content: flex-start;
+    }
+
 }
