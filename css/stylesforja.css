@@ -6,8 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -68,7 +67,7 @@ body{
     border: 1px solid #0E5883;
     border-radius: 12px;
     margin: 40px 50px 0px 0px;
-    padding: 20px;
+    padding: 16px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -78,7 +77,6 @@ body{
 .header-boton a{
     color: white;
     text-decoration-line: none;
-    font-size: 15px;
 }
 
 .line-header{
@@ -87,44 +85,38 @@ body{
     padding-bottom: 20px;
 }
 
-section{
+.banner{
     background-image: url(../img/banner-medico.png);
-}
-
-section img{
-    width: 100%;
+    background-size: 100%;
 }
 
 .texto-banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
+  text-align: center;
 }
 
 .banner-p1{
-   
-    font-size: 180%;
+    font-size: 170%;
     color: var(--naranja-color);
+    padding-top: 10px;
 }
 
 .banner-p2{
-    font-size: 200%;
+    font-size: 180%;
 }
 
 .banner-boton{
-    font-size: 100%;
     border-radius: 12px;
     border: 1px solid #0E5883;
     background-color: #0E5883;
     font-weight: bold;
-    height: 3.5%;
+    padding: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .banner-boton a{
     color: white;
     text-decoration-line: none;
-    padding: 5px;
 }
 
 .icono{
@@ -140,14 +132,12 @@ section img{
     background-image: url(../img/4.\ covid.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: 2%;
-    height: 750px;
 }
 
 .caja-pequeña{
     background-color: #c4c4c4de;
+    background-size: 100%;
     margin-top: -2.1%;
-    height: 750px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -156,7 +146,6 @@ section img{
 .caja-pequeña-sub{
     color: #0D5381;
     font-weight: normal;
-    font-size: 20px;
     margin-top: 17px;
 }
 
@@ -194,11 +183,6 @@ li {
    background-size: 1.6rem;
    background-repeat: no-repeat;
    font-size: 20px;
-}
-
-.caja-signos{
-    display: flex;
-    width: 80%;
 }
 
 .centrar{
@@ -742,25 +726,14 @@ footer{
 
 @media screen and (min-width:768px) {
 
-    #header-contenedor{
-        padding: 10px -5px 0px -5px;
-    }
 
     .header-logo{
-        width: 40%;
+        width: 45%;
         padding: 40px 1px 2px 70px;
     }
 
-    .header-inject{
-        top: 7%;
-        left: 40%;
-    }
-    
     .header-boton{
-        top: 8%;
-        right: 14%;
-        height: 3.5%;
-        border: 2px solid #0E5883;
+        font-size:50px;
     }
     
     .header-boton a{
@@ -778,26 +751,18 @@ footer{
     }
     
     .header-linea{
-        position: absolute;
-        top: 20%;
         width: 90%;
     }
 
     .banner-p1{
-        left: 6%;
-        top: 28%;
         font-size: 190%;
     }
     
     .banner-p2{
-        left: 22%;
-        top: 32%;
         font-size: 205%;
     }
     
     .banner-boton{
-        left: 21%;
-        top: 39%;
         font-size: 112%;
         border: 2px solid #0E5883;
     }
@@ -830,75 +795,21 @@ footer{
 
 @media screen and (min-width:1024px){
 
-    .header-inject{
-        top: 8%;
+    .header-log{
+        padding-top: 5%;
     }
 
-    .header-boton{
-        right: 6%;
-    }
-
-    .header-linea{
-        top: 23%;
-    }
-
-}
-
-@media screen and (min-width:1200px){
-
-    main{
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .header-logo{
-        width: 25%;
-        margin-left: -25px;
-        padding-top: 100px;
-        padding-bottom: 10px;
-    }
-    
-    .header-inject{
-        top: 11%;
-        left: 23%;
-        width: 40px;
-        height: 40px;
-    }
-    
     .contenedor-header-top{
-        padding-left: 25%;
-        margin-top: -16%;
-        margin-bottom: 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding-left: 0 0 10% 10%;
+        margin-top: -20%;
+        margin-right: 8%;
     }
-    
-    .header-boton{
-        right: 2%;
-        top: 5%;
-        height: 3%;
-        border: 2px solid #0E5883;
-    }
-    
-    .header-linea{
-        top: 17%;
-        width: 70%;
-    }
-    
-    .banner-p1{
-        left: 10%;
-        top: 26%;
-    }
-    
-    .banner-p2{
-        left: 23%;
-        top: 30%;
+
+    .line-header{
+        padding-top: 25px;
     }
     
     .banner-boton{
-        left: 22%;
-        top: 40%;
         padding-top: 0.5%;
         display: flex;
     }
@@ -910,7 +821,6 @@ footer{
     }
     
     .caja-pequeña{
-        margin-top: -2.1%;
         height: 510px;
         display: flex;
         flex-direction: row;
@@ -920,14 +830,17 @@ footer{
         padding-right: 22rem;
         padding-top: -1rem;
     }
-    
+
     .signos1 p{
-        padding-top: 10rem;
+        padding-top: 8.6rem;
     }
     
     .signos1 img{
-        margin-top: 30%;
-        margin-right: 0.5%;
+        margin-top: 29%; 
+    }
+
+    .centrar a{
+        padding-bottom: 8px;
     }
     
     li {
@@ -944,5 +857,67 @@ footer{
     .table-index td{
         justify-content: flex-start;
     }
+
+}
+
+@media screen and (min-width:1200px){
+
+    .header-log{
+        padding-top: 7%;
+    }
+
+    .contenedor-header-top{
+        margin-top: -19%;
+        margin-right: 2%;
+    }
+
+    .line-header{
+        padding-top: 25px;
+    }
+    
+    .caja-grande{
+        background-size: 100%;
+        margin-top: 2%;
+        height: 510px;
+    }
+    
+    .caja-pequeña{
+        height: 510px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .signos{
+        padding-right: 22rem;
+        padding-top: -1rem;
+    }
+
+    .signos1 p{
+        padding-top: 8.6rem;
+    }
+    
+    .signos1 img{
+        margin-top: 29%; 
+    }
+
+    .centrar a{
+        padding-bottom: 8px;
+    }
+    
+    li {
+       margin-left: 25%;
+       padding-left: 2rem;
+       padding-bottom: 1rem;
+       font-size: 18px;
+    }
+
+    .caja-hacer{
+        
+    }
+    
+    .table-index td{
+        justify-content: flex-start;
+    }
+
 
 }
