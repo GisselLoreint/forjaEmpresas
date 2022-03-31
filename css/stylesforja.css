@@ -240,8 +240,8 @@ footer{
 
 .boton-volver{
     position: absolute;
-    top: 3%;
-    right: 20px;
+    right: 15%;
+    top: 12.5%;
     color: white;
     background-color: #1D1B45;
     border-radius: 6px;
@@ -291,7 +291,7 @@ footer{
 }
 
 .caja-form{
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     height: 650px;
     border-radius: 15px;
@@ -366,11 +366,12 @@ footer{
     align-items: center;
     color: #000;
     text-decoration-line: none;
+    font-size: 17px;
 }
 
 .caja-negra button{
     width: 100%;
-    height: 40px;
+    height: 50px;
     margin-top: 15px;
     border: 2px solid var(--naranja-color);
     border-radius: 4px;
@@ -384,12 +385,23 @@ footer{
     align-items: center;
 }
 
+.consulta1 h1{
+    text-align: center;
+    font-size: 32px;
+    color: #BF4011;
+    font-weight: normal;
+    padding-bottom: 60px ;
+}
+
 .consulta1 input{
-    width: 280px;
+    width: 290px;
     text-align: center;
     background-color: #f5f1f1;
-    font-size: 15px;
-    padding-right: 42px;
+    font-size: 18px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--gris-rata-color);
 }
 
 .consulta1 button{
@@ -403,24 +415,13 @@ footer{
 .consulta1 i{
     width: 30px;
     color: white;
+    font-size: 19px;
+    padding: 2px;
 }
 
 .fondo-dashboard{
     width: 100%;
     background-color: #f5f1f1;
-}
-
-.fondo-dashboard h1{
-    color: #BF4011;
-    font-weight: normal;
-    padding-bottom: 60px ;
-}
-
-.fondo-dashboard input{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid var(--gris-rata-color);
 }
 
 #boton-user{
@@ -447,19 +448,16 @@ footer{
 }
 
 .img-guerreros{
+    padding-left: 60%;
     opacity: 35%;
-    float: right;
     padding-top: 10%;
     padding-right: 2%;
 }
 
 .img-franja{
     padding: 0;
-    width: 1063.5px;
-    height: 50px;
-    position: absolute;
-    top: 98.5%;
-    right: 0%;
+    width: 100%;
+    height: 55px;
 }
 
 /*Estilos pacientes*/
@@ -798,8 +796,46 @@ footer{
      .boton-volver a{
          font-size: 19px;
      }
-}
 
+     /*Responsive dashboard*/
+    
+    .caja-negra img{
+        width: 210px;
+    }
+    
+    .botones-caja-negra a{
+        font-size: 18px;
+    }
+    
+    .consulta1 h1{
+        font-size: 34px;
+    }
+    
+    .consulta1 input{
+        width: 300px;
+        font-size: 19px;
+    }
+    
+    .consulta1 button{
+        padding: 3px 3px 3px 3px;
+    }
+    
+    .consulta1 i{
+        font-size: 20px;
+        padding: 3px;
+    }
+    
+    .boton-usuario{
+        font-size: 15px;
+    }
+    
+    .boton-usuario i{
+        margin-top: 8px;
+        padding-top: 3px;
+        width: 36px;
+    }
+}
+    
 @media screen and (min-width:1024px){
 
     #header-contenedor{
@@ -888,7 +924,7 @@ footer{
     /*Responsive Login*/
 
     .boton-volver{
-        top: 28%;
+        top: 10%;
         right: 23%;
     }
     
@@ -933,9 +969,49 @@ footer{
         margin-bottom: 15px;
     }
     .boton-ingresar a{
-        font-size: 24px;
+        font-size: 2
+    }
+        
+     /*Responsive dashboard*/
+
+     .caja-negra{
+        width: 350px;
+    }
+    
+    .caja-negra img{
+        width: 250px;
+    }
+    
+    .botones-caja-negra a{
+        font-size: 22px;
+    }
+    
+    .caja-negra button{
+        height: 60px;
+    }
+    
+    .consulta1 h1{
+        font-size: 35px;
+        padding-bottom: 65px ;
+    }
+    
+    .consulta1 input{
+        width: 300px;
+        font-size: 19px;
+    }
+    
+    .consulta1 button{
+        padding: 3px 3px 3px 3px;
+        margin: 4px 1px 10px 1px;
+        border: 3px solid var(--azul-cielo-color);
+        border-radius: 7px;
+        background-color: #151433;
     }
 
+    .boton-usuario{
+        font-size: 16px;
+    }
+    
 }
 
 @media screen and (min-width:1200px){ 
@@ -960,7 +1036,7 @@ footer{
 
     
     .boton-volver{
-        top: 40%;
+        top: 13.5%;
         right: 31%;
         padding: 10px;
     }
@@ -1003,4 +1079,33 @@ footer{
         padding: 3px 8px;
     }
 
+    /*Responsive dashboard*/
+
+    .caja-negra{
+        width: 360px;
+    }
+    
+    .caja-negra img{
+        width: 260px;
+    }
+    
+    .botones-caja-negra a{
+        font-size: 24px;
+    }
+    
+    .caja-negra button{
+        height: 66px;
+    }
+    
+    .consulta1 h1{
+        font-size: 36px;
+        padding-bottom: 65px ;
+    }
+
+    .boton-usuario{
+        font-size: 18px; 
+    }
+    
 }
+
+
