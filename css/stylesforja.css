@@ -123,6 +123,16 @@ body{
     text-decoration-line: none;
 }
 
+.click:hover{
+    animation: 1s click 1;
+}
+
+@keyframes click{
+    50%{
+        transform: scale(1.4);
+    }
+}
+
 .icono{
     padding-left: 5px;
 }
@@ -344,6 +354,7 @@ footer{
 
 #container-principal{
     display: flex;
+    flex-direction: column;
     background-color: #000;
 }
 .caja-negra{
@@ -352,8 +363,7 @@ footer{
 }
 
 .caja-negra img{
-    width: 200px;
-    padding: 60px 15px 80px 15px;
+   width: 500px;
 }
 
 .botones-caja-negra{
@@ -463,12 +473,9 @@ footer{
 /*Estilos pacientes*/
 
 #header-pacientes{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-pacientes1{
-    background-color: #201f1f;
+   display: flex;
+   justify-content: space-between;
+   background-color: #201f1f;
 }
 
 .header-pacientes1 img{
@@ -497,12 +504,9 @@ footer{
 
 .boton-agregar{
     background-color: #BF4011;
-    padding: 6px 10px 6px 10px;
     border-radius: 5px;
     border: 2px solid #BF4011; 
-   position: absolute;
-    left: 8%;
-    top: 35%;
+    margin-top: 10px;
 }
 
 .boton-agregar a{
@@ -510,14 +514,18 @@ footer{
     text-decoration-line: none;
 }
 
+.encabezado-header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
 
 .titulo-pacientes{
+    text-align: center;
     font-weight: normal;
     text-decoration: underline;
     text-decoration-color: var(--azul-cielo-color);
-    position: absolute;
-    right: 40%;
-    bottom: 49%;
+    font-size: 33px;
 }
 
 .search{
@@ -534,26 +542,22 @@ footer{
     font-size: 10px;
     padding-bottom: 5px;
     padding-right: 7px;
+    margin-right: 5px;
 }
 
 .search button{
     border-radius: 6px;
     border: 2px solid var(--azul-cielo-color);
-    margin-left: 2px;
     background-color: #1D1B45;
     color: white;
 }
 
-#table-pacientes{
-  position: absolute;
-  left: 9%;
-  bottom: -3%;
-}
-
 .tabla-pacientes{
+    width: 100%;
+    margin-right: 10px;
     background-color: var(--gris-claro-color);
     border: 2px solid var(--azul-cielo-color);
-    border-collapse: collapse;
+    overflow-x: auto;
 }
 
 .tabla-pacientes tr{
@@ -565,27 +569,13 @@ footer{
     color: white;
     font-weight: normal;
     text-shadow: 0.2px 0.2px 0.5px white;
-}
-
-.th-registro{
-    padding: 10px 17px 10px 17px;
-}
-
-.th-doc{
-    padding: 10px 28px 10px 28px;
-}
-
-.th-nombre-apellido-accion{
-    padding: 10px 80px 10px 80px;
-}
-
-.th-edad{
-    padding: 10px 15px 10px 15px;
+    font-size: 12px;
 }
 
 .tabla-pacientes td{
     border: 2px solid var(--azul-cielo-color);
     text-align: center;
+    font-size: 12px;
 }
 
 .tabla-pacientes button{
@@ -608,17 +598,13 @@ footer{
     color: white;
 }
 
-.footer-pacientes{
-    position: absolute;
-    bottom: -23%;
-    width: 100%;
-}
 
 /*Estilos formPacientes*/
 
 .titulo-registro{
     background-color: #1D1B45;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 .titulo-registro h2{
@@ -632,6 +618,14 @@ footer{
     margin: 0px 15px 0px 15px;
 }
 
+.form-pacientes{
+    width: 100%;
+    margin-right: 10px;
+    background-color: var(--gris-claro-color);
+    border: 2px solid var(--azul-cielo-color);
+    overflow-x: auto; 
+}
+
 .formulario-pacientes{
     background-color: var(--gris-claro-color);
     margin: 40px 30px 60px 30px;
@@ -642,13 +636,13 @@ footer{
 
 .form-group2{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-pacientes{
     font-family: 'Poppins', sans-serif;
-    height: 33px;
+    height: 10%;
 }
 
 .input-inicio{
@@ -657,7 +651,7 @@ footer{
 
 .input-formPacientes{
     margin: 5px 8px 15px 10px;
-    width: 545px;
+    width: 100%;
 }
 
 .input-final{
@@ -675,6 +669,7 @@ footer{
     color: white;
     border: 1.5px solid #0d637e;
     border-radius: 4px;
+    font-size: 18px;
 }
 
 .caja-sub h3{
@@ -682,28 +677,30 @@ footer{
 }
 
 .sub-datos i{
-    padding-left: 3%;
     color: #000;
 }
 
 .sub-datos-1{
-    padding-left: 39%;
+    padding-left: 15%;
 }
 
 .sub-informacion{
-    padding-left: 36%;
+    padding-left: 15%;
+    font-size: 17px;
 }
 
 .sub-estado{
-    padding-left: 40%;
+    padding-left: 17%;
 }
 
 .input-radio{
     color: var(--gris-rata-color);
+    font-size: 16px;
 }
 
 .label-r{
     margin: 0px 7px 0px 7px;
+    font-size: 16px;
 }
 
 .boton-guardar{
@@ -728,8 +725,8 @@ footer{
     margin-top: 15px;
 }
 
-@media screen and (min-width:768px) {
 
+@media screen and (min-width:768px) {
 
     .header-logo{
         width: 45%;
@@ -799,8 +796,13 @@ footer{
 
      /*Responsive dashboard*/
     
+     #container-principal{
+        flex-direction: row;
+    }
+    
     .caja-negra img{
-        width: 210px;
+        width: 200px;
+        padding: 60px 2px 50px 2px;
     }
     
     .botones-caja-negra a{
@@ -834,6 +836,43 @@ footer{
         padding-top: 3px;
         width: 36px;
     }
+
+     /*Responsive pacientes*/
+
+     .boton-agregar{
+         margin-top: 5px;
+     }
+
+     .titulo-pacientes{
+         font-size: 30px;
+     }
+
+     .search input{
+         font-size: 12px;
+         padding: 8px 10px 8px 10px;
+         margin-right: 4px;
+     }
+
+     .search button{
+        padding-left: 8px;
+        padding-right: 8px;
+     }
+
+     /*Responsive formpacientes*/
+    
+    .sub-datos-1{
+        padding-left: 35%;
+    }
+
+    .sub-informacion{
+        padding-left: 30%;
+        font-size: 20px;
+    }
+
+    .sub-estado{
+        padding-left: 38%;
+    }
+     
 }
     
 @media screen and (min-width:1024px){
@@ -1012,6 +1051,37 @@ footer{
         font-size: 16px;
     }
     
+     /*Responsive formpacientes*/
+
+     .form-group2{
+         flex-direction: row;
+     }
+
+     .caja-sub{
+         font-size: 22px;
+     }
+
+     .sub-datos-1{
+         padding-left: 36%;
+     }
+
+     .sub-informacion{
+         padding-left: 30%;
+         font-size: 26px;
+     }
+
+     .sub-estado{
+         padding-left: 38%;
+     }
+
+     .input-radio{
+         font-size: 18px;
+     }
+
+     .label-r{
+         font-size: 18px;
+     }
+
 }
 
 @media screen and (min-width:1200px){ 
@@ -1082,7 +1152,7 @@ footer{
     /*Responsive dashboard*/
 
     .caja-negra{
-        width: 360px;
+        width: 300px;
     }
     
     .caja-negra img{
@@ -1090,11 +1160,11 @@ footer{
     }
     
     .botones-caja-negra a{
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .caja-negra button{
-        height: 66px;
+        height: 55px;
     }
     
     .consulta1 h1{
@@ -1106,6 +1176,24 @@ footer{
         font-size: 18px; 
     }
     
+    /*Responsive formpacientes*/
+
+    .sub-datos-1{
+        padding-left: 37%;
+    }
+
+    .sub-informacion{
+        padding-left: 33%;
+        font-size: 26px;
+    }
+
+    .sub-estado{
+        padding-left: 39%;
+    }
+
+    .label-r{
+        text-align: center;
+    }
 }
 
 
