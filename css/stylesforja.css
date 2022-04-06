@@ -127,6 +127,7 @@ body{
     animation: 1s click 1;
 }
 
+
 @keyframes click{
     50%{
         transform: scale(1.4);
@@ -251,12 +252,13 @@ footer{
 .boton-volver{
     position: absolute;
     right: 15%;
-    top: 12.5%;
+    top: 8.5%;
     color: white;
     background-color: #1D1B45;
     border-radius: 6px;
     border: 2px solid var(--azul-cielo-color);
     padding: 12px 15px 12px 15px;
+    animation: down 1s 0.8s backwards ;
 }
 
 .boton-volver a{
@@ -307,6 +309,16 @@ footer{
     border-radius: 15px;
     background-color: white;
     box-shadow: 3px 3px 5px var(--gris-rata-color);
+    animation: down 1s 0.8s backwards ;
+}
+
+@keyframes down{
+    0%{
+        transform: translateY(-80vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .caja-form label{
@@ -387,6 +399,13 @@ footer{
     border-radius: 4px;
     text-shadow: 0.2px 0.2px 0.2px #000;
     font-family: 'Poppins', sans-serif;
+    animation: escala 0.5s backwards;
+}
+
+@keyframes escala{
+    0%{
+        transform: scale(0);
+    }
 }
 
 .consulta{
@@ -507,6 +526,13 @@ footer{
     border-radius: 5px;
     border: 2px solid #BF4011; 
     margin-top: 10px;
+    animation: move 1s;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(-100vh);
+    }
 }
 
 .boton-agregar a{
@@ -526,6 +552,13 @@ footer{
     text-decoration: underline;
     text-decoration-color: var(--azul-cielo-color);
     font-size: 33px;
+    animation: move2 1s;
+}
+
+@keyframes move2{
+    0%{
+        transform: translateX(100vh);
+    }
 }
 
 .search{
@@ -543,6 +576,7 @@ footer{
     padding-bottom: 5px;
     padding-right: 7px;
     margin-right: 5px;
+    animation: move 1s;
 }
 
 .search button{
@@ -550,6 +584,7 @@ footer{
     border: 2px solid var(--azul-cielo-color);
     background-color: #1D1B45;
     color: white;
+    animation: move 1s;
 }
 
 .tabla-pacientes{
@@ -682,16 +717,30 @@ footer{
 
 .sub-datos-1{
     padding-left: 15%;
+    animation: 1s colgar 1;
+    transform-origin: top center;
 }
 
 .sub-informacion{
     padding-left: 15%;
     font-size: 17px;
+    animation: 1.5s colgar 1;
+    transform-origin: center;
 }
 
 .sub-estado{
     padding-left: 17%;
+    animation: 2s colgar 1;
+    transform-origin: top center;
 }
+
+@keyframes colgar{
+    0%{
+        transform: rotate(120deg);
+    }
+  
+}
+
 
 .input-radio{
     color: var(--gris-rata-color);
@@ -787,7 +836,7 @@ footer{
      /*Responsive Login*/
 
      .boton-volver{
-        top: 28%;
+        top: 13%;
      }
 
      .boton-volver a{
@@ -963,7 +1012,7 @@ footer{
     /*Responsive Login*/
 
     .boton-volver{
-        top: 10%;
+        top: 18%;
         right: 23%;
     }
     
@@ -1106,7 +1155,7 @@ footer{
 
     
     .boton-volver{
-        top: 13.5%;
+        top: 23%;
         right: 31%;
         padding: 10px;
     }
