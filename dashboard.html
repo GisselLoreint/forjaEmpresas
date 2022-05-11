@@ -6,57 +6,60 @@
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/stylesforja.css">
     <link rel="icon" href="img2/icon-svg.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/bb22cb708c.js" crossorigin="anonymous"></script>
-</head>
+</head >
 
-<body>
+            <body>
 
-    <section id="container-principal">
-        <article class="caja-negra">
-            <img src="img/0. logoforja.png" class="logo-d">
-            <div>
-                <button type="submit" class="botones-caja-negra"><a href="pacientes.html">
-                        <i class="fa-solid fa-users"></i>
-                        Pacientes</a>
-                </button>
-            </div>
-            <div>
-                <button type="submit" class="botones-caja-negra"><a href="">
-                        <i class="fa-solid fa-syringe"></i>
-                        Vacunación</a>
-                </button>
-            </div>
-            <div>
-                <button type="submit" class="botones-caja-negra"><a href="login.html">
-                        <i class="fa-solid fa-power-off"></i>
-                        Cerrar sesión</a></button>
-            </div>
-        </article>
+                <section id="container-principal">
+                    <article class="caja-negra">
+                        <img src="img/0. logoforja.png" class="logo-d">
+                            <div>
+                                <button type="submit" class="botones-caja-negra"><a href="pacientes.html">
+                                    <i class="fa-solid fa-users"></i>
+                                    Pacientes</a>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="submit" class="botones-caja-negra"><a href="">
+                                    <i class="fa-solid fa-syringe"></i>
+                                    Vacunación</a>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="submit" class="botones-caja-negra"><a href="login.html">
+                                    <i class="fa-solid fa-power-off"></i>
+                                    Cerrar sesión</a></button>
+                            </div>
+                    </article>
 
-        <article class="fondo-dashboard">
-            <div id="boton-user">
-                <button type="submit" class="boton-usuario"><i class="fa-solid fa-user"></i>
-                    Carolina Loaiza
-                </button>
-            </div>
-            <div class="consulta">
-                <div class="consulta1">
-                    <h1>BIENVENIDOS</h1>
-                    <input name="documento" id="documento" type="text" placeholder="Digite el número de documento">
-                    <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button type="submit">
-                        <i class="fa-solid fa-rotate-right"></i>
-                    </button>
-                </div>
-                <div class="img-guerreros">
-                    <img src="img/13. guerreros.png">
-                </div>
-                <img src="img/3.franja.jpeg" class="img-franja">
-            </div>
-        </article>
-    </section>
-</body>
+                    <article class="fondo-dashboard">
+                        <div id="boton-user">
+                            <button type="submit" class="boton-usuario"><i class="fa-solid fa-user"></i>
+                                Carolina Loaiza
+                            </button>
+                        </div>
+                        <div class="consulta">
+                            <div class="consulta1">
+                                <h1>BIENVENIDOS</h1>
+                                <input name="documento" id="documento" type="text" placeholder="Digite el número de documento">
+                                    <button id="btnSearch">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="submit">
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                    </button>
+                            </div>
+                            <div class="img-guerreros">
+                                <img src="img/13. guerreros.png">
+                            </div>
+                            <img src="img/3.franja.jpeg" class="img-franja">
+                        </div>
+                    </article>
+                </section>
+
+                <script src="js/scriptDashboard.js"></script>
+    </body>
 
 </html>

@@ -249,15 +249,18 @@ footer{
 
 /*Estilos login*/
 
+#btn-volver{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 34% 1% 0;
+}
+
 .boton-volver{
-    position: absolute;
-    right: 15%;
-    top: 8.5%;
     color: white;
     background-color: #1D1B45;
     border-radius: 6px;
     border: 2px solid var(--azul-cielo-color);
-    padding: 12px 15px 12px 15px;
+    padding: 10px 15px 10px 15px;
     animation: down 1s 0.8s backwards ;
 }
 
@@ -265,20 +268,17 @@ footer{
     color: white;
     text-decoration-line: none;
     font-family: 'Poppins',sans-serif;
-    font-size: 22px;
 }
 
 #form-login{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 25%;
 }
 
 .form-login1{
     background-color: #A8DDE0;
-    height: 230px;
+    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -286,13 +286,13 @@ footer{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     text-shadow: 0.3px 0.3px 0.3px #000;
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 .form-login1 img{
-    width: 290px;
+    width: 250px;
     padding-right: 15px;
 }
 
@@ -303,9 +303,8 @@ footer{
 }
 
 .caja-form{
-    max-width: 700px;
-    width: 100%;
-    height: 650px;
+    width: 32%;
+    height: 435px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 3px 3px 5px var(--gris-rata-color);
@@ -322,18 +321,18 @@ footer{
 }
 
 .caja-form label{
-    font-size: 30px;
+    font-size: 18px;
     text-shadow: 0.2px 0.2px 0.2px #000;
     padding-bottom: 8px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .caja-form input{
     background-color: rgba(111, 198, 209, 0.1);
     border: 1px solid #42d1db;
     border-radius: 12px;
-    width: 320px;
-    height: 35px;
+    width: 240px;
+    height: 30px;
 }
 
 .form-group{
@@ -343,7 +342,8 @@ footer{
 }
 
 .link-olvido{
-    padding: 35px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 12px;
     color: black;
     text-shadow: 0.2px 0.2px 0.2px #000;
 }
@@ -353,13 +353,14 @@ footer{
     border-radius: 8px;
     background-color: #BF4011;
     margin-top: 10px;
-    padding: 12px 18px;
+    padding: 5px;
+    width: 105px;
+    cursor: pointer;
 }
 .boton-ingresar a{
     color: white;
     text-decoration-line: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
 }
 
 /*Estilos dashboard*/
@@ -369,6 +370,7 @@ footer{
     flex-direction: column;
     background-color: #000;
 }
+
 .caja-negra{
     background-color: #000;
     height: 500px;
@@ -439,6 +441,7 @@ footer{
     border: 3px solid var(--azul-cielo-color);
     border-radius: 7px;
     background-color: #151433;
+    cursor: pointer;
 }
 
 .consulta1 i{
@@ -715,6 +718,18 @@ footer{
     color: #000;
 }
 
+.sub-vacunacion i{
+    color: white;
+    padding-left: 10%;
+    margin-right: -9%;
+}
+
+.sub-vacunacion-1 i{
+    color: white;
+    padding-left: 10%;
+    margin-right: -17%;
+}
+
 .sub-datos-1{
     padding-left: 15%;
     animation: 1s colgar 1;
@@ -761,18 +776,89 @@ footer{
 .btn-guardar{
     background-color: #C45112;
     font-family: 'Poppins', sans-serif;
-    color: white;
     border: 2px solid #C45112;
     border-radius: 6px;
     padding: 3px 25px 3px 25px;
+    cursor: pointer;
+}
+
+.btn-guardar a{
+    text-decoration-line: none;
+    color: white;
 }
 
 .footer-formPacientes{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 2%;
+    margin-bottom: -2%;
 }
+
+/*FormVacunación*/
+
+.estado{
+    color: var(--gris-rata-color);
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+.sub-paciente{
+    font-weight: 200;
+    padding-left: 14px;
+}
+
+.input-observation{
+    display: flex;
+    justify-content: center;
+}
+
+.input-observation input{
+    margin-top: 1%;
+    width: 100%;
+    height: 70px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.form-vacunacion input, .form-vacunacion select{
+    border: 1.5px solid #51A8AE;
+    height: 40px;
+}
+
+.btnVacunacion{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+}
+
+.btnVacunacion button{
+    background-color: #C45112;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #C45112;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 150px;
+    padding: 3px 0px 3px 0px;
+    margin-right: 14%;
+    color: white;
+}
+
+.btnVacunacion a{
+    text-decoration-line: none;
+    color: white;
+}
+
+.fechaDosis{
+    font-size: 12px;
+    width: 100%;
+    margin-right: 3%;
+}
+
+.fechaDosis label{
+    padding-left: 4%;
+}
+
 
 
 @media screen and (min-width:768px) {
@@ -834,17 +920,8 @@ footer{
      }
 
      /*Responsive Login*/
+     /*Responsive dashboard
 
-     .boton-volver{
-        top: 13%;
-     }
-
-     .boton-volver a{
-         font-size: 19px;
-     }
-
-     /*Responsive dashboard*/
-    
      #container-principal{
         flex-direction: row;
     }
@@ -1011,76 +1088,22 @@ footer{
 
     /*Responsive Login*/
 
-    .boton-volver{
-        top: 18%;
-        right: 23%;
-    }
-    
-    .boton-volver a{
-        font-size: 20px;
-    }
-    
-    #form-login{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 25%;
-    }
-    
-    .form-login1{
-        font-size: 26px;
-    }
-    
-    .caja-form{
-        width: 55%;
-        height: 630px;
-    }
-    
-    .caja-form label{
-        font-size: 27px;
-        padding-top: 35px;
-    }
-    
-    .caja-form input{
-        width: 330px;
-        height: 37px;
-    }
-    
-    .link-olvido{
-        padding: 35px 0px 10px 0px;
-        color: black;
-        text-shadow: 0.1px 0.1px 0.1px #000;
-    }
-    
-    .boton-ingresar{
-        margin-bottom: 15px;
-    }
-    .boton-ingresar a{
-        font-size: 2
-    }
-        
-     /*Responsive dashboard*/
-
-     .caja-negra{
-        width: 350px;
+    /*Dashboard*/
+    #container-principal{
+        flex-direction: row;
     }
     
     .caja-negra img{
-        width: 250px;
+        width: 200px;
+        padding: 60px 2px 50px 2px;
     }
     
     .botones-caja-negra a{
-        font-size: 22px;
-    }
-    
-    .caja-negra button{
-        height: 60px;
+        font-size: 18px;
     }
     
     .consulta1 h1{
-        font-size: 35px;
-        padding-bottom: 65px ;
+        font-size: 34px;
     }
     
     .consulta1 input{
@@ -1090,14 +1113,21 @@ footer{
     
     .consulta1 button{
         padding: 3px 3px 3px 3px;
-        margin: 4px 1px 10px 1px;
-        border: 3px solid var(--azul-cielo-color);
-        border-radius: 7px;
-        background-color: #151433;
     }
-
+    
+    .consulta1 i{
+        font-size: 20px;
+        padding: 3px;
+    }
+    
     .boton-usuario{
-        font-size: 16px;
+        font-size: 15px;
+    }
+    
+    .boton-usuario i{
+        margin-top: 8px;
+        padding-top: 3px;
+        width: 36px;
     }
     
      /*Responsive formpacientes*/
@@ -1131,6 +1161,12 @@ footer{
          font-size: 18px;
      }
 
+     /*FormVacunacion*/
+     .input-observation input{
+        width: 50%;
+        height: 80px;
+     }
+
 }
 
 @media screen and (min-width:1200px){ 
@@ -1154,50 +1190,6 @@ footer{
     /*Responsive login*/
 
     
-    .boton-volver{
-        top: 23%;
-        right: 31%;
-        padding: 10px;
-    }
-    
-    .boton-volver a{
-        font-size: 17px;
-    }
-    
-    .form-login1{
-        font-size: 20px;
-    }
-    
-    .caja-form{
-        width: 38%;
-        height: 530px;
-    }
-    
-    .caja-form label{
-        font-size: 22px;
-        padding-top: 20px;
-        padding-bottom: 5px ;
-    }
-    
-    .caja-form input{
-        width: 310px;
-        height: 35px;
-    }
-    
-    .link-olvido{
-        padding: 40px 0px 10px 0px;
-        font-size: 20px;
-    }
-    
-    .boton-ingresar{
-        margin-bottom: 18px;
-    }
-
-    .boton-ingresar a{
-        font-size: 20px;
-        padding: 3px 8px;
-    }
-
     /*Responsive dashboard*/
 
     .caja-negra{

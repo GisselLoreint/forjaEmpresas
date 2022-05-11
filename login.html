@@ -5,34 +5,37 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/stylesforja.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body background="img/10.fondo.png">
-    <button type="submit" class="boton-volver"><a href="index.html">
-            Volver al inicio</a></button>
 
+    <div id="btn-volver">
+        <button type="submit" class="boton-volver"><a href="index.html">
+                Volver al inicio</a></button>
+    </div>
     <form name="Form" action="formPacientes.html" method="post" target="_self" autocomplete="autocomplete" novalidate
         id="form-login">
-         <div id="caja-form" class="caja-form">
+        <div id="caja-form" class="caja-form">
             <div class="form-login1">
                 <img src="img/0. logoforja.png">
                 <p>¡Contigo siempre!</p>
             </div>
             <div class="form-group">
                 <label for="Form">Usuario</label>
-                <input name="usuario" id="usuario" type="text">
+                <input name="user" id="user" type="text">
             </div>
             <div class="form-group">
                 <label for="Form">Contraseña</label>
-                <input name="contraseña" id="contraseña" type="password">
+                <input name="password" id="password" type="password">
             </div>
             <a href="renovarContraseña.html" class="link-olvido">¿Olvidaste tu contraseña?</a>
-            <button type="submit" class="boton-ingresar"><a href="dashboard.html">
-                    Ingresar</a></button>
-            </div>
-
+            <button id="btnInicio" class="boton-ingresar">Ingresar</button>
+        </div>
     </form>
 
+
+    <script src="js/scriptLogin.js"></script>
 </body>
 
 </html>

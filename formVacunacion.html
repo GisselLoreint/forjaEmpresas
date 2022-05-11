@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario Vacunación</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesforja.css">
+    <link rel="icon" href="img2/icon-svg.jpg">
+    <script src="https://kit.fontawesome.com/bb22cb708c.js" crossorigin="anonymous"></script>
+</head>
+
+
+<header id="header-pacientes" class="header-pacientes1">
+    <img src="img/0. logoforja.png">
+    <div>
+        <button type="submit"><a href="dashboard.html">
+                <i class="fa-solid fa-house-user"></i></a>
+        </button>
+        <button type="submit"><a href="login.html">
+                <i class="fa-solid fa-power-off"></i></a>
+        </button>
+    </div>
+</header>
+
+
+<body>
+    <img src="img/3.franja.jpeg" class="franja-pacientes">
+
+    <p class="estado">Estado: Activo</p>
+    <div class="sub-paciente">
+        <p>INFORMACIÓN DEL PACIENTE</p>
+    </div>
+    <div class="btnVacunacion">
+        <div class="boton-guardar">
+            <button type="submit" form="form1">Guardar cambios</button>
+        </div>
+        <div class="boton-guardar">
+            <button type="submit">
+                <a href="dashboard.html">Cerrar</a>
+            </button>
+        </div>
+    </div>
+    <div class="caja-pacientes">
+        <form id="form1" name="form1" action="dashboard.html" method="post" target="_self" autocomplete="autocomplete">
+
+            <div class="formulario-pacientes form-vacunacion">
+                <div class="form-group2">
+                    <input type="date" name="date" id="date" class="input-pacientes input-formPacientes" required="">
+                    <input type="text" name="registro" id="registro" pattern="[0-9]+" placeholder="Número de registro"
+                        title="Ingresa números" class="input-pacientes input-formPacientes">
+                </div>
+                <div class="sub-vacunacion caja-sub">
+                    <i class="fa-solid fa-syringe"></i>
+                    <h3 class="sub-datos-1">DATOS PERSONALES</h3>
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" pattern="[a-z A-Z]{1,30}"
+                        title="Ingresa solo letras" required="" class="input-pacientes input-formPacientes">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellidos" pattern="[a-z A-Z]{1,30}"
+                        title="Ingresa solo letras" required="" class="input-pacientes input-formPacientes">
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="identificacion" id="identificacion" required pattern="[0-9]+"
+                        placeholder="Número de identificación" class="input-pacientes input-formPacientes">
+                    <input type="date" name="date" id="date" class="input-pacientes input-formPacientes" required>
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="edad" id="edad" class="input-pacientes input-formPacientes"
+                        pattern="[0-9]{1,3}" title="Ingrese máximo tres números" required="" placeholder="Edad">
+                    <select name="tipoid" id="tipoid" class="input-pacientes input-formPacientes" required
+                        title="Seleccione una sede"><br>
+                        <option value="">EPS...</option>
+                        <option value="1">Sura</option>
+                        <option value="2">Compensar</option>
+                        <option value="3">Nueva EPS</option>
+                        <option value="4">Capital Salud</option>
+                        <option value="5">Medimas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formulario-pacientes form-vacunacion">
+                <div class="sub-vacunacion-1 caja-sub">
+                    <i class="fa-solid fa-syringe"></i>
+                    <h3 class="sub-datos-1">INFORMACIÓN DE VACUNACIÓN</h3>
+                </div>
+                <div class="form-group2">
+                    <select name="sede" id="sede" class="input-pacientes input-formPacientes" required><br>
+                        <option value="">Sedes...</option>
+                        <option value="1">Chapinero</option>
+                        <option value="2">Teusaquillo</option>
+                        <option value="3">Chico Norte</option>
+                    </select>
+                    <select name="tipoid" id="tipoid" class="input-pacientes input-formPacientes" required><br>
+                        <option value="">Profesional...</option>
+                        <option value="1">Carol Garcia</option>
+                        <option value="2">Caren Daza</option>
+                        <option value="3">Michelle Martinez</option>
+                    </select>
+                </div>
+                <div class="form-group2">
+                    <input type="text" name="idProfesional" id="idProfesional" required pattern="[0-9]{1,10}"
+                        placeholder="id Profesional" class="input-pacientes input-formPacientes">
+                    <input type="text" name="dosis" id="dosis" required pattern="[1-3]{1,2}" placeholder="Dosis"
+                        class="input-pacientes input-formPacientes">
+                </div>
+
+                <div class="form-group2">
+                    <select name="eps" id="eps" class="input-pacientes input-formPacientes" required><br>
+                        <option value="">Biológico...</option>
+                        <option value="1">Pfizer</option>
+                        <option value="2">Moderna</option>
+                        <option value="3">Sinovac</option>
+                        <option value="4">Janssen</option>
+                        <option value="5">AstraZeneca</option>
+                    </select>
+                    <div class="fechaDosis">
+                        <label id="fechaDosis1">Fecha 1ra dosis </label>
+                        <input type="text" name="fechaDosis1" id="fechaDosis1" required pattern="\d{1,2}/\d{1,2}/\d{4}"
+                            title="Ingrese día/mes/año" placeholder="dd/mm/aaaa"
+                            class="input-pacientes input-formPacientes">
+                    </div>
+                    <div class="fechaDosis">
+                        <label id="fechaDosis1">Fecha 2da dosis </label>
+                        <input type="text" name="fechaDosis2" id="fechaDosis2" required pattern="\d{1,2}/\d{1,2}/\d{4}"
+                            title="Ingrese día/mes/año" placeholder="dd/mm/aaaa"
+                            class="input-pacientes input-formPacientes">
+                    </div>
+                    <div class="fechaDosis">
+                        <label id="fechaDosis1">Fecha 3ra dosis </label>
+                        <input type="text" name="fechaDosis3" id="fechaDosis3" required pattern="\d{1,2}/\d{1,2}/\d{4}"
+                            title="Ingrese día/mes/año" placeholder="dd/mm/aaaa"
+                            class="input-pacientes input-formPacientes">
+                    </div>
+                </div>
+                <div class="input-observation">
+                    <input type="text" name="observacion" id="observacion"
+                        placeholder="Observaciones adicionales" class="input-pacientes">
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <footer class="footer-formPacientes">
+        <div>
+            <p>© 2021 FORJA EMPRESAS</p>
+        </div>
+    </footer>
+</body>
+
+</html>
